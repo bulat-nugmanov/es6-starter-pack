@@ -1,0 +1,27 @@
+{
+  "name": "es6-starter-pack",
+  "version": "1.0.0",
+  "description": "ES6 + Flow + (Babel + Eslint)",
+  "keywords": [ "es6", "flow" ],
+  "author": "Bulat Nugmanov",
+  "main": "build/index.js",
+  "scripts": {
+    "test": "echo \"write some tests!\" && exit 1",
+    "build": "babel src -d build",
+    "start": "node build/index.js",
+    "watch": "babel src -w -d build",
+    "develop": "npm run build && npm-run-all -p start watch"
+  },
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-eslint": "^10.0.1",
+    "babel-plugin-transform-object-rest-spread": "^6.26.0",
+    "babel-preset-env": "^1.7.0",
+    "babel-preset-flow": "^6.23.0",
+    "eslint": "^5.9.0",
+    "eslint-plugin-flowtype": "^3.2.0",
+    "eslint-plugin-import": "^2.14.0",
+    "flow-bin": "^0.86.0",
+    "npm-run-all": "^4.1.3"
+  }
+}
